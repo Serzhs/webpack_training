@@ -7,3 +7,6 @@ headerInit()
 formInit()
 moreInit()
 copyInit()
+
+
+const abcd = 'hello'
