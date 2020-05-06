@@ -1,0 +1,15 @@
+.success {
+    width: 100%;
+    padding: 15px;
+    background-color: darkseagreen;
+    border: 2px solid green;
+    color: white;
+    font-size: 25px;
+    font-weight: bold;
+    margin-bottom: 25px;
+    display: none;
+}
+
+.success.active {
+    display: block;
+}

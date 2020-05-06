@@ -1,0 +1,47 @@
+.more {
+    border: 2px solid burlywood;
+    border-radius: 5px;
+}
+
+.more__head {
+    cursor: pointer;
+    padding: 10px;
+    border-bottom: 2px solid transparent;
+    position: relative;
+}
+
+.more__head:after {
+    content: '';
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 10px 7px 0 7px;
+    border-color: burlywood transparent transparent transparent;
+    position: absolute;
+    right: 25px;
+    top: 50%;
+    margin-top: -5px;
+}
+
+.more.active .more__head:after {
+    border-width: 0 7px 10px 7px;
+    border-color: transparent transparent burlywood transparent;
+}
+
+.more__body {
+    max-height: 0;
+    overflow: hidden;
+}
+
+.more__body-inner {
+    padding: 20px;
+}
+
+.more.active .more__head {
+    border-bottom-color: burlywood;
+}
+
+.more.active .more__body {
+    transition: max-height 0.2s;
+    max-height: 200px;
+}
