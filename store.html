@@ -1,0 +1,113 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Veikals</title>
+  <link rel="stylesheet" href="style/flexboxgrid.css">
+  <link rel="stylesheet" href="style/style.css">
+</head>
+<body>
+<div class="wrapper">
+  <div class="page-header">
+    <header class="header">
+      <div class="container">
+        <div class="row middle-xs">
+          <div class="col-xs-3">
+            <img src="images/logo.svg" alt="" class="header__logo">
+          </div>
+          <div class="col-xs-9">
+            <div class="row end-xs">
+              <div class="col-xs-12">
+                <span class="header__date js-date"></span>
+              </div>
+              <div class="col-xs-12">
+                <nav class="nav">
+                  <a href="index.html" class="nav__item">Home</a>
+                  <a href="camus.html" class="nav__item">Kamī</a>
+                  <a href="voltaire.html" class="nav__item">Voltērs</a>
+                  <a href="store.html" class="nav__item">Pirkt</a>
+                </nav>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+  </div>
+  <main class="page-body">
+    <section class="section">
+      <div class="container">
+        <div class="row middle-xs">
+          <div class="col-xs-12">
+            <span class="success js-success">
+              Pirkums veikts!
+            </span>
+            <form class="form js-form">
+              <h4>Izvēlies autoru, kura grāmatu vēlies iegādāties:</h4>
+              <div class="form__checkbox">
+                <input type="checkbox" value="10" id="camus" class="js-checkbox">
+                <label for="camus">ALBĒRS KAMĪ - 10 EUR</label>
+              </div>
+              <div class="form__checkbox">
+                <input type="checkbox" value="14" id="voltaire" class="js-checkbox">
+                <label for="voltaire">Voltērs - 14 EUR</label>
+              </div>
+              <button type="submit" class="button">
+                Pirkt
+              </button>
+            </form>
+          </div>
+          <div class="col-xs-12">
+            <div class="more js-more">
+              <div class="more__head">
+                Uzzināt vairāk
+              </div>
+              <div class="more__body">
+                <div class="more__body-inner">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse luctus non augue in pellentesque.
+                  Pellentesque finibus vulputate tincidunt. Nulla libero tellus, auctor ut libero vel, finibus tristique
+                  lectus. Etiam eget ante facilisis nisl condimentum finibus mollis auctor erat. Donec finibus sodales
+                  enim vel ornare. Curabitur posuere est id nisi posuere finibus. Praesent mattis risus sed ligula
+                  ultricies lobortis. Duis congue ipsum eget enim tempus, vitae tempus arcu ultrices. Integer
+                  pellentesque urna quis sagittis ultricies. Nullam dolor metus, pharetra eu nisl in, ultricies viverra
+                  ligula. In ultrices dignissim eros, eget euismod ipsum rhoncus in. Vestibulum feugiat efficitur sem
+                  vel eleifend. Cras id leo leo.
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-xs-12">
+            <span class="sum">Summa: <span class="js-sum">0</span> EUR</span>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+  <div class="page-footer">
+    <footer class="footer">
+      <div class="container">
+        <div class="row center-xs">
+          <div class="col-xs-12">
+            <img src="images/logo.svg" alt="webpack" class="footer__logo">
+          </div>
+        </div>
+      </div>
+    </footer>
+    <section class="copy">
+      <div class="container">
+        <div class="row center-xs">
+          <div class="col-xs-12">
+            <div class="js-footer-date"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+</div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.19.1/moment.min.js"></script>
+<script src="script/script.js"></script>
+</body>
+</html>
