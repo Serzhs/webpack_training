@@ -1,5 +1,7 @@
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
+const { CleanWebpackPlugin } = require('clean-webpack-plugin');
+
 const path = require('path');
 
 module.exports = {
@@ -32,6 +34,22 @@ module.exports = {
           'sass-loader',
         ],
       },
+      {
+        test: /\.html$/i,
+        loader: 'html-loader',
+      },
+      {
+        test: /\.(png|jpe?g|gif|svg)$/i,
+        use: [
+          {
+            loader: 'file-loader',
+            options: {
+              name: "[name].[ext]",
+              outputPath: 'image'
+            }
+          },
+        ],
+      },
     ]
   },
   plugins: [
@@ -51,6 +69,7 @@ module.exports = {
       filename: 'voltaire.html',
       template: 'voltaire.html'
     }),
-    new MiniCssExtractPlugin()
+    new MiniCssExtractPlugin(),
+    new CleanWebpackPlugin()
 ]
 };
