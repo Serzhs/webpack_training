@@ -1,3 +1,4 @@
+const HtmlWebpackPlugin = require('html-webpack-plugin');
 const path = require('path');
 
 module.exports = {
@@ -31,5 +32,23 @@ module.exports = {
         ],
       },
     ]
-  }
+  },
+  plugins: [
+    new HtmlWebpackPlugin({
+      filename: 'index.html',
+      template: 'index.html'
+    }),
+    new HtmlWebpackPlugin({
+      filename: 'camus.html',
+      template: 'camus.html'
+    }),
+    new HtmlWebpackPlugin({
+      filename: 'store.html',
+      template: 'store.html'
+    }),
+    new HtmlWebpackPlugin({
+      filename: 'voltaire.html',
+      template: 'voltaire.html'
+    }),
+]
 };
